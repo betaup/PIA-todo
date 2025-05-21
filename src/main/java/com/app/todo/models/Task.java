@@ -6,13 +6,46 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
 
+import java.time.LocalDateTime;
+
+/**
+ * Entidad que representa una tarea (Task) en el sistema To-Do.
+ *
+ * Cada tarea tiene un identificador unico, un titulo y un estado que indica si ha sido completada.
+ */
 @Entity
 public class Task {
+    /**
+     * Identificador unico de la tarea. Se genera automaticamente.
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    /**
+     * Titulo o descripción breve de la tarea.
+     */
     private String title;
+    /**
+     * Estado que indica si la tarea ha sido completada.
+     */
     private boolean completed;
+    /**
+     * Fecha y hora en la que se creo la tarea.
+     */
+    private LocalDateTime fechaDeCreacion;
+
+    // Constructor que inicializa la fecha de creacion automáticamente
+    public Task() {
+        this.fechaDeCreacion = LocalDateTime.now();
+    }
+
+    public LocalDateTime getFechaDeCreacion() {
+        return fechaDeCreacion;
+    }
+
+    public void setFechaDeCreacion(LocalDateTime fechaDeCreacion) {
+        this.fechaDeCreacion = fechaDeCreacion;
+    }
 
     public String getTitle() {
         return title;
