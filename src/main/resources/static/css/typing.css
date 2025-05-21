@@ -1,0 +1,48 @@
+body {
+    font-family: 'Sour Gummy', cursive !important;
+    background-color: #fdfdfd;
+    margin: 0;
+    padding: 0;
+}
+
+/* Añadir relleno superior para crear mas espacio en la parte superior */
+.typing-container {
+    max-width: 600px; /* ancho maximo */
+    margin: 80px auto 0;
+    padding-top: 40px;
+}
+
+#typing-text {
+    font-size: 24px;
+    font-weight: 500;
+    user-select: none;
+    text-align: center; /* centrar texto */
+    margin: 0 auto 30px auto;
+    max-width: 600px;
+}
+
+textarea.form-control {
+    font-family: 'Sour Gummy', cursive !important;
+    font-size: 20px;
+    resize: none;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#result {
+    font-size: 18px;
+    text-align: center; /* centrar el resultado */
+    display: block;
+    margin-top: 15px;
+}
+
+.typing-container p {
+    text-align: center;
+}
+
+.typing-container textarea {
+    display: block;
+    margin: 0 auto;
+    max-width: 600px;
+}

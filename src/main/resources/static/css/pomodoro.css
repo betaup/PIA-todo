@@ -1,0 +1,74 @@
+body {
+    font-family: 'Sour Gummy', sans-serif !important;
+    background-color: #fdfdfd;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Encabezado superior */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 20px;
+}
+
+/* Clima a la izquierda */
+#weather {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* Botones a la derecha */
+.top-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Seccion principal del contenido */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+/* Selector de tiempos (lado izquierdo) */
+.time-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.time-selector button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* Temporizador (lado derecho) */
+.timer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    min-width: 300px;
+}
+
+#timer {
+    font-size: 120px;
+    margin-bottom: 30px;
+}
+
+.controls button {
+    margin: 5px;
+    padding: 10px 25px;
+    font-size: 16px;
+}

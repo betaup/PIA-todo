@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Pomodoro Timer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/pomodoro.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container-fluid py-3 px-5">
+  <!-- Barra superior -->
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <!-- Izquierda: Usuario y clima -->
+    <div>
+      <h4>Bienvenido, Usuario</h4>
+      <p id="weather">Cargando clima...</p>
+    </div>
+
+    <!-- Derecha: Botones -->
+    <div>
+      <a href="/todo" class="btn btn-outline-primary me-2">To-Do List</a>
+      <a href="/typing-test" class="btn btn-outline-warning">Typing Test</a>
+      <a href="/" class="btn btn-outline-secondary">Inicio</a>
+    </div>
+  </div>
+
+  <!-- Cuerpo principal -->
+  <div class="row">
+    <!-- Izquierda: Opciones de temporizador -->
+    <div class="col-md-4 mb-4">
+      <div class="card mb-3">
+        <div class="card-body text-center">
+          <h5>15 min trabajo / 2 min descanso</h5>
+          <button class="btn btn-success" onclick="setTimer(15, 2)">Iniciar</button>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="card-body text-center">
+          <h5>30 min trabajo / 5 min descanso</h5>
+          <button class="btn btn-success" onclick="setTimer(30, 5)">Iniciar</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body text-center">
+          <h5>60 min trabajo / 10 min descanso</h5>
+          <button class="btn btn-success" onclick="setTimer(60, 10)">Iniciar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Derecha: Temporizador -->
+    <div class="col-md-8 text-center">
+      <div class="p-5 border rounded bg-white">
+        <div id="timer">25:00</div>
+        <div class="mt-4">
+          <button class="btn btn-success me-2" onclick="startTimer()">Start</button>
+          <button class="btn btn-danger" onclick="resetTimer()">Reset</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Scripts -->
+<script src="/js/pomodoro.js"></script>
+</body>
+</html>
