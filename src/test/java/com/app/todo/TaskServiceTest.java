@@ -25,6 +25,11 @@ import static org.mockito.Mockito.*;
  * Podemos ignorarlos por ahora; el codigo funciona correctamente.
  */
 
+/*
+Refrencia de como se puede utilizar Mockito:
+https://youtu.be/j9k3epjUgr8?si=PrddJYdmarPRNWlz
+Es basicamente algunos conceptos o etiquetas que usa en el video replicados en mis pruebas
+ */
 @ExtendWith(MockitoExtension.class)
 class TaskServiceTest {
 
