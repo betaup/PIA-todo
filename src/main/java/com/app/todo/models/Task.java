@@ -34,7 +34,7 @@ public class Task {
      */
     private LocalDateTime fechaDeCreacion;
 
-    // Constructor que inicializa la fecha de creacion automáticamente
+    // Constructor que inicializa la fecha de creacion automaticamente
     public Task() {
         this.fechaDeCreacion = LocalDateTime.now();
     }
